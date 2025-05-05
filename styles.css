@@ -1,0 +1,197 @@
+/* Estilo general del body */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(245, 241, 241);
+}
+
+/* Estilo general del header */
+.header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px 15px 10px 15px;
+  border-top-left-radius: 15px; 
+  border-top-right-radius: 15px; 
+}
+
+.header p {
+  font-style: italic;
+}
+
+.logo-animado {
+  width: 130px;
+  height: auto;
+}
+
+#reloj {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(86, 180, 239);
+  text-align: center;
+}
+
+/* Estilo general del nav */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(77, 75, 75);
+  padding: 7px 7px 0px 7px;
+  border-bottom-left-radius: 15px; 
+  border-bottom-right-radius: 15px; 
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+  color: blue;
+}
+
+/* Estilo general del main */
+.main {
+  text-align: center;
+  background-color: white;
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px; 
+}
+
+.main h2 {
+  font-weight: bold;
+}
+
+.mainServicios {
+  text-align: justify;
+  background-color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 15px; 
+}
+
+.mainServicios h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.imagen-inicio, .imagen-servicio, .imagen-nosotros {
+  display: block;
+  margin: auto;
+  width: 400px ;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 15px; 
+  padding: 15px 15px 15px 15px;
+}
+
+/* Estilos para el formulario */
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f3f2f2;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  background-color: rgb(77, 75, 75);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #077cf9;
+}
+
+/* Estilo general del aside */
+.aside {
+  background-color: white;
+  padding: 25px 30px 15px 30px;
+  border-radius: 15px; 
+}
+
+.aside h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.encabezado {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Estilo general del footer */
+.footer {
+  background-color: black;
+  padding: 7px 7px 0px 7px;
+  border-radius: 15px; 
+  text-align: center;
+}
+
+.footer p {
+  color:white;
+}
+
+#contador-visitas {
+  font-weight: bold;
+  color: rgb(86, 180, 239);
+}
+
+/* Animaciones */
+.imagen-animada, form {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+ }
+
+.logo-animado {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.logo-visible {
+  opacity: 1;
+  transform: scale(1);
+}
