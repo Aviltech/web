@@ -24,6 +24,7 @@ body {
 
 .logo-animado {
   width: 130px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -91,7 +92,8 @@ body {
   display: block;
   margin: auto;
   width: 400px ;
-  height: 300px;
+  max-width: 100%;
+  height: auto;
   border: 1px solid gray;
   border-radius: 15px; 
   padding: 15px 15px 15px 15px;
@@ -101,7 +103,9 @@ body {
 form {
   display: grid;
   gap: 15px;
-  max-width: 400px;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
   margin: 20px auto;
   padding: 20px;
   background-color: #f3f2f2;
